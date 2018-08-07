@@ -8,11 +8,15 @@
 
 
 <ion-content>
-  <div class="item-profile" text-center #profilePic [style.background-image]="'url(' + item.profilePic + ')'">
+  <div class="item-profile" text-center #profilePic [style.background-image]="'url(https://www.logolynx.com/images/logolynx/93/93b1ba883345342c8b235c154a813196.png)'">
   </div>
 
   <div class="item-detail" padding>
     <h2>{{item.name}}</h2>
-    <p>{{item.about}}</p>
+    <p>{{item.user}}</p>
+    <p>{{item.task}}</p>
+    <p>{{item.isDone}}</p>
+
+
   </div>
 </ion-content>

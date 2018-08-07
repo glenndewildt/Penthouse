@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { IonicPageModule } from 'ionic-angular';
+import { Items } from '../../providers/items/items';
+
+
 
 import { ListMasterPage } from './list-master';
 
@@ -10,9 +13,15 @@ import { ListMasterPage } from './list-master';
   ],
   imports: [
     IonicPageModule.forChild(ListMasterPage),
-    TranslateModule.forChild()
+    TranslateModule.forChild(),
+
+
+
   ],
-  exports: [
+    providers: [ Items ]
+,
+
+    exports: [
     ListMasterPage
   ]
 })
